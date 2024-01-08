@@ -1,0 +1,291 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background-color: white;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 1em;
+  text-align: center;
+}
+.column {
+  width: 50%;
+  padding: 0.5em 0;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2em;
+  color: black;
+}
+
+.card {
+  box-shadow: 0 0 1em black;
+  padding: 2em 1em;
+  border-radius: 0.6em;
+  cursor: pointer;
+  color: #9a50db;
+  transition: 0.3s;
+  margin: 2em;
+}
+
+.card .img-container {
+  margin: 0 auto 2em auto;
+}
+
+.card img {
+  border-radius: 50%;
+}
+
+.card:hover {
+  background: linear-gradient(#6045ea, #8567f7);
+  color: white;
+}
+
+.card p {
+  font-weight: 200;
+  text-decoration: uppercase;
+  margin: 0.5em 0 2em 0;
+}
+
+.badge {
+  padding: 0.55em 0.75em;
+  color: white;
+  text-align: center;
+  font-size: medium;
+}
+
+.bg-primary {
+  background-color: #cb15c8 !important;
+}
+hr {
+  display: block;
+  margin-top: 2.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-width: 4px;
+  width: 50%;
+  background-color: white;
+  border-top: 2px dashed #ff00ea; /* Dashed line */
+}
+
+div p {
+  padding: -1px 5em;
+  font-weight: bold;
+}
+.mg {
+  border: 2px;
+  margin: 25px 0 50px 0;
+  font-size: 25px;
+}
+.card .img-container img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Small devices (landscape phones, 320px and up) */
+@media (max-width: 320px) {
+  h3 {
+    text-align: center;
+    font-size: 2em;
+    color: rgb(121, 96, 96);
+  }
+  .card p {
+    font-size: 0.8em;
+  }
+  .row {
+    --bs-gutter-x: -1.2rem;
+    --bs-gutter-y: 0;
+    padding: 1em;
+  }
+  .card {
+    width: 104%;
+    height: 72%;
+    box-shadow: 0 0 1em black;
+    padding: -1em 0em;
+    border-radius: 0.6em;
+    cursor: pointer;
+    color: #9a50db;
+    transition: 0.3s;
+    margin: 0em;
+  }
+  .badge {
+    padding: 0.55em 0.75em;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  div span {
+    padding: 0em;
+    margin: 2em;
+  }
+  .img-container img {
+    width: 31%;
+    height: 42;
+    margin: -18px 0em 3em -1em;
+  }
+  .card .img-container {
+    margin: -9px auto 2em auto;
+  }
+  div h3 {
+    font-size: 0.9em;
+  }
+  .card .img-container img {
+    width: 58px;
+    height: 43px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  h3 {
+    text-align: center;
+    font-size: 2em;
+    color: rgb(121, 96, 96);
+  }
+  .card p {
+    font-size: 1.1em;
+  }
+  .row {
+    --bs-gutter-x: -1.2rem;
+    --bs-gutter-y: 0;
+    padding: 1em;
+  }
+  .card {
+    width: 103%;
+    height: 81%;
+    box-shadow: 0 0 1em black;
+    padding: -1em 0em;
+    border-radius: 0.6em;
+    cursor: pointer;
+    color: #9a50db;
+    transition: 0.3s;
+    margin: 0em;
+  }
+  .badge {
+    padding: 0.55em 0.75em;
+    color: white;
+    text-align: center;
+    font-size: 23px;
+  }
+
+  div span {
+    padding: 0em;
+    margin: 2em;
+  }
+  .img-container img {
+    width: 50%;
+    margin: -18px -1em 3em -1em;
+  }
+  .card .img-container {
+    margin: -9px auto 2em auto;
+  }
+  div h3 {
+    font-size: 1.3em;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  h3 {
+    text-align: center;
+    font-size: 2em;
+    color: rgb(121, 96, 96);
+  }
+  .card p {
+    font-size: 1.4em;
+  }
+  .row {
+    --bs-gutter-x: -0.5rem;
+    --bs-gutter-y: 0;
+    padding: 1em;
+  }
+  .card {
+    width: 87%;
+    height: 80%;
+    box-shadow: 0 0 1em black;
+    padding: -1em 0em;
+    border-radius: 0.6em;
+    cursor: pointer;
+    color: #9a50db;
+    transition: 0.3s;
+    margin: 0em;
+  }
+  .badge {
+    padding: 0.55em 0.75em;
+    color: white;
+    text-align: center;
+    font-size: 23px;
+  }
+
+  div span {
+    padding: 0em;
+    margin: 2em;
+  }
+  .img-container img {
+    width: 56%;
+    margin: -18px -1em 2em -1em;
+  }
+  .card .img-container {
+    margin: -9px auto 2em auto;
+  }
+  div h3 {
+    font-size: 1.5em;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  h3 {
+    text-align: center;
+    font-size: 2em;
+    color: black;
+  }
+  .card p {
+    font-size: 1.9em;
+  }
+  .row {
+    --bs-gutter-x: -0.5rem;
+    --bs-gutter-y: 0;
+    padding: 1em;
+  }
+  .card {
+    width: 91%;
+    height: 81%;
+    box-shadow: 0 0 1em black;
+    padding: -1em 0em;
+    border-radius: 0.6em;
+    cursor: pointer;
+    color: #9a50db;
+    transition: 0.3s;
+    margin: 0em;
+  }
+  .badge {
+    padding: 0.55em 0.75em;
+    color: white;
+    text-align: center;
+    font-size: 23px;
+  }
+
+  div span {
+    padding: 0em;
+    margin: 1em;
+  }
+  .img-container img {
+    width: 60%;
+    margin: -18px -1em 2em -1em;
+  }
+}
